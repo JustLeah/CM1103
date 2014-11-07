@@ -36,10 +36,18 @@ def xmasLights(totalPresses=50, length=50, currentPress=1, combination=('_'*50))
 	currentPress = currentPress + 1
 	return xmasLights(totalPresses, length, currentPress, newcomb)
 
-#Different tests to show it working
-print(xmasLights(-100))
-print(xmasLights(0))
+#After 3 presses and after 50
 print(xmasLights(3))
-print(xmasLights(5, 75))
-
-
+print(xmasLights(50))
+#Different tests to show it working
+#print(xmasLights(-100))
+#print(xmasLights(0))
+#Used this for debugging to try and figure out the pattern
+#for x in range(1,51):
+#	print(str(x)[-1], end="")
+#print()
+#User defined light length
+#print(xmasLights(5, 75))
+#Print all combinations between 1-50 to see the pattern
+#for x in range(1,51):
+#	print(xmasLights(x))
